@@ -9,6 +9,10 @@ public class ToDoList {
     public void add(String input) {
         Incomplete.add(input);
     }
+    
+    public void add(int input) {
+        System.out.println("Please enter the name of a task in the form of a string.");
+    }
 
     public void complete(String input) {
         for (int i = 0; i < Incomplete.size(); i++) {
@@ -17,6 +21,10 @@ public class ToDoList {
                 Incomplete.remove(i);
             }
         }
+    }
+
+    public void complete(int input) {
+        System.out.println("Please enter the name of a task in the form of a string.");
     }
 
     public void all() {
